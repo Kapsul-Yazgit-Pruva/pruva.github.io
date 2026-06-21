@@ -1,7 +1,3 @@
-/* ===========================================================
-   KAPSUL YAZGİT PRUVA — ortak stil dosyası
-   =========================================================== */
-
 :root{
   --bg:         #f4f8fc;
   --bg-alt:     #e9f1fa;
@@ -9,9 +5,9 @@
   --line:       #d7e4f0;
   --text:       #16324a;
   --muted:      #5d7b94;
-  --accent:     #1f6fd6;   /* ana mavi */
+  --accent:     #1f6fd6; 
   --accent-dim: #c9e0f7;
-  --signal:     #0d4f9c;   /* koyu vurgu mavisi */
+  --signal:     #0d4f9c;
   --radius:     6px;
   --maxw:       1180px;
 
@@ -38,7 +34,6 @@ a{color:inherit;text-decoration:none;}
   padding:0 24px;
 }
 
-/* ---------- Header / Nav ---------- */
 header.site-header{
   position:sticky; top:0; z-index:50;
   background:rgba(244,248,252,0.94);
@@ -94,7 +89,6 @@ nav.main-nav a.active::after{
   }
 }
 
-/* ---------- Hero ---------- */
 .hero{
   padding:96px 0 64px;
   border-bottom:1px solid var(--line);
@@ -126,7 +120,6 @@ nav.main-nav a.active::after{
 .btn-ghost{border-color:var(--line); color:var(--text); background:#fff;}
 .btn-ghost:hover{border-color:var(--accent); color:var(--accent);}
 
-/* ---------- Sections ---------- */
 section{padding:64px 0;}
 section + section{border-top:1px solid var(--line);}
 .section-head{margin-bottom:36px;}
@@ -139,7 +132,6 @@ section + section{border-top:1px solid var(--line);}
   color:var(--signal);
 }
 
-/* ---------- Cards / Grids ---------- */
 .grid{display:grid; gap:20px;}
 .grid-3{grid-template-columns:repeat(3,1fr);}
 .grid-2{grid-template-columns:repeat(2,1fr);}
@@ -157,7 +149,6 @@ section + section{border-top:1px solid var(--line);}
 .stat .num{font-family:var(--f-display); font-size:2.1rem; color:var(--accent); font-weight:700;}
 .stat .label{color:var(--muted); font-size:0.85rem;}
 
-/* ---------- Galeri ---------- */
 .gallery-grid{
   display:grid; grid-template-columns:repeat(3,1fr); gap:14px;
 }
@@ -168,7 +159,6 @@ section + section{border-top:1px solid var(--line);}
 }
 .gallery-item img{width:100%; height:100%; object-fit:cover;}
 
-/* ---------- Haberler ---------- */
 #news-list{display:flex; flex-direction:column; gap:0;}
 .news-item{
   display:grid; grid-template-columns:140px 1fr; gap:24px;
@@ -189,7 +179,6 @@ section + section{border-top:1px solid var(--line);}
 @media (max-width:600px){.news-item{grid-template-columns:1fr;}}
 .empty-state{color:var(--muted); font-size:0.95rem;}
 
-/* ---------- Sponsorlar ---------- */
 .sponsor-grid{
   display:grid; grid-template-columns:repeat(4,1fr); gap:20px;
 }
@@ -204,7 +193,6 @@ section + section{border-top:1px solid var(--line);}
 }
 .sponsor-logo img{max-height:60px; width:auto; object-fit:contain;}
 
-/* ---------- Takım ---------- */
 .team-block{margin-bottom:48px;}
 .team-block h3{
   font-family:var(--f-body); color:var(--accent); font-weight:600; font-size:0.85rem;
@@ -224,7 +212,6 @@ section + section{border-top:1px solid var(--line);}
 .member-card.lead .member-photo{border-color:var(--accent); border-width:2px;}
 .member-card.lead .member-name{color:var(--signal); font-weight:600;}
 
-/* ---------- Footer ---------- */
 footer.site-footer{
   border-top:1px solid var(--line); padding:40px 0; margin-top:40px;
 }
@@ -281,7 +268,7 @@ footer.site-footer{
 
 .gallery-item {
   overflow: hidden;
-  border-radius:
+  border-radius: 16px;
 }
 
 .gallery-item img {
@@ -327,7 +314,7 @@ footer.site-footer{
   margin: 0 auto 20px auto;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08)
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
 .member-photo img {
@@ -346,22 +333,20 @@ footer.site-footer{
   font-weight: 600;
 }
 
-/* --- Gelişmiş Footer CSS Yapısı --- */
 .site-footer {
   padding: 60px 0 30px;
-  background-color: #0b0f19; /* Projenizin koyu temasına uyacak bir renk (gerekirse değiştirebilirsiniz) */
+  background-color: #0b0f19;
   color: #fff;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-content {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 eşit sütun */
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   margin-bottom: 40px;
 }
 
-/* Telefon ve dar ekranlar için alt alta sıralama düzeni */
 @media (max-width: 768px) {
   .footer-content {
     grid-template-columns: 1fr;
@@ -384,7 +369,6 @@ footer.site-footer{
   line-height: 1.6;
 }
 
-/* Hızlı Menü Linkleri */
 .footer-menu-links {
   display: flex;
   flex-direction: column;
@@ -408,7 +392,6 @@ footer.site-footer{
   color: #fff;
 }
 
-/* Sosyal Medya Logoları */
 .social-logos {
   display: flex;
   gap: 20px;
@@ -520,23 +503,18 @@ footer.site-footer{
   }
 }
 
-/* =========================================================
-   HABER ÖĞESİ DÜZENİ (GÖRSEL ADADAN AYRILDI - MODERN ASİMETRİK)
-========================================================= */
-
 .news-item {
   display: flex;
   gap: 40px; 
-  margin-bottom: 50px; /* Haberler arası boşluk ferahlatıldı */
+  margin-bottom: 50px;
   align-items: center; 
-  background: transparent; /* Ana satırın kutusu ve arka planı tamamen silindi */
+  background: transparent;
   border: none;
   padding: 0;
 }
 
-/* ---- 1. BÖLÜM: ADADAN BAĞIMSIZ GÖRSEL ---- */
 .news-image {
-  flex: 0 0 320px; /* Sabit upscale boyutu */
+  flex: 0 0 320px;
   width: 320px; 
   aspect-ratio: 1 / 1; 
   position: relative;
@@ -547,31 +525,28 @@ footer.site-footer{
   width: 100%;
   height: 100%;
   object-fit: contain; 
-  border-radius: 16px; /* Görsele ait bağımsız yumuşak köşeler */
+  border-radius: 16px;
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
-  filter: drop-shadow(0 20px 35px rgba(0, 0, 0, 0.6)); /* Sayfadan bağımsız süzülme gölgesi */
+  filter: drop-shadow(0 20px 35px rgba(0, 0, 0, 0.6));
 }
 
-/* Hover durumunda görsel adadan bağımsız olarak havaya kalkar */
 .news-item:hover .news-image .main-img {
   transform: scale(1.05) translateY(-8px); 
 }
 
-/* ---- 2. BÖLÜM: YAZI ADASI (KUTU SADECE BURASI) ---- */
 .news-content {
   flex-grow: 1; 
   display: flex;
   flex-direction: column;
-  background-color: #0b0f19; /* Ada görünümü sadece metin alanına verildi */
+  background-color: #0b0f19;
   padding: 40px; 
   border-radius: 20px; 
   border: 1px solid rgba(255, 255, 255, 0.05);
   position: relative;
-  overflow: hidden; /* Blur efektinin adadan taşmasını engeller */
+  overflow: hidden;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
-/* Sadece yazı adasının içine hapsedilmiş arka plan blur */
 .news-content .row-bg-blur {
   position: absolute;
   top: -20%;
@@ -584,7 +559,6 @@ footer.site-footer{
   pointer-events: none; 
 }
 
-/* Yazıların blur katmanının üzerinde net kalması için */
 .news-content time,
 .news-content h3,
 .news-content p,
@@ -627,7 +601,6 @@ footer.site-footer{
   font-weight: 600;
 }
 
-/* Tablet ve Telefonlar (Mobil Düzen koruması) */
 @media (max-width: 900px) {
   .news-item {
     flex-direction: column; 

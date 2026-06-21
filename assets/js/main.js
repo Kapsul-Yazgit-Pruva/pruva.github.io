@@ -1,7 +1,3 @@
-// ===========================================================
-// KAPSUL YAZGİT PRUVA — Main Script
-// ===========================================================
-
 document.addEventListener("DOMContentLoaded", () => {
   const toggle = document.querySelector(".nav-toggle");
   const nav = document.querySelector(".main-nav");
@@ -24,7 +20,6 @@ async function loadNews(container) {
     const items = await res.json();
     
     if (!items.length) {
-      // İngilizceye çevrildi
       container.innerHTML = `<p class="empty-state">No updates published yet. Coming soon.</p>`;
       return;
     }
@@ -53,7 +48,6 @@ async function loadNews(container) {
         container.appendChild(el);
       });
   } catch (err) {
-    // İngilizceye çevrildi
     container.innerHTML = `<p class="empty-state">Failed to load updates.</p>`;
     console.error(err);
   }
