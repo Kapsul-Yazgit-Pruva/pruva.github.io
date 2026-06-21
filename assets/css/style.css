@@ -621,3 +621,21 @@ footer.site-footer{
     align-self: center; 
   }
 }
+
+.member-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.member-linkedin svg {
+  width: 18px;
+  height: 18px;
+  fill: #a0aec0;
+  transition: fill 0.3s ease;
+}
+
+.member-linkedin:hover svg {
+  fill: #fff; 
+}
