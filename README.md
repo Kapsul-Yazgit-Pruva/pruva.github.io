@@ -4,11 +4,16 @@
   <img src="assets/img/team_logo/pruva.jpg" alt="PRUVA Logo" width="200" style="border-radius: 50%;">
 </p>
 
-**PRUVA**, Konya Teknik Üniversitesi bünyesinde faaliyet gösteren **KAPSUL YAZGİT** teknoloji topluluğu tarafından geliştirilen, tam otonom bir İnsansız Deniz Aracı (ASV - Autonomous Surface Vehicle) projesidir. 
+**PRUVA** is a fully autonomous surface vehicle (ASV) project developed by the **KAPSUL YAZGİT** technology community, operating within Konya Technical University.
 
-Bu depo, başta **Njord Autonomous Ship Challenge 2026**, **ROBOBOAT 2026** ve **TEKNOFEST** olmak üzere prestijli otonom deniz aracı yarışmalarına hazırlanan PRUVA takımının **resmi web sitesini** barındırmaktadır. 
+This repository hosts the official website of the PRUVA team, which is preparing for prestigious autonomous maritime competitions, primarily the **Njord Autonomous Ship Challenge 2026**, **ROBOBOAT 2026**, and **TEKNOFEST**.
 
-Sitede projenin teknik gelişim süreçlerine, takım kadrosuna, güncel loglara ve medya galerisine ulaşabilirsiniz.
+On the website, you can explore the technical development processes of the project, our team roster, the latest technical logs, and the media gallery.
 
-🌐 **Proje Web Sitesini İnceleyin:** 
-👉 [https://kapsul-yazgit-pruva.github.io/pruva.github.io/](https://kapsul-yazgit-pruva.github.io/pruva.github.io/)
+🌐 **Explore the Project Website:** 👉 [https://kapsul-yazgit-pruva.github.io/pruva.github.io/](https://kapsul-yazgit-pruva.github.io/pruva.github.io/)
+
+---
+
+## 📄 License
+
+All rights reserved. All content, source code, photographs, and graphic materials belonging to the PRUVA team in this repository are the exclusive property of the team. They may not be copied, reproduced, distributed, or used in any other project for commercial or individual purposes without explicit written permission from the KAPSUL YAZGİT PRUVA team.
