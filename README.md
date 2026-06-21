@@ -1,1 +1,1 @@
-# pruva.github.io
+**KAPSÜL YAZGİT PRUVA**

@@ -3,8 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KAPSUL YAZGİT PRUVA</title>
-<meta name="description" content="KAPSUL YAZGİT community's autonomous surface vehicle project PRUVA — Njord Challenge 2026 and TEKNOFEST.">
+<title>News — KAPSUL YAZGİT PRUVA</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
@@ -13,9 +12,7 @@
 
 <header class="site-header">
   <div class="wrap nav-row">
-    <a href="index.html" class="brand">
-      PRUVA <span class="tag">USV</span>
-    </a>
+    <a href="index.html" class="brand">PRUVA <span class="tag">USV</span></a>
     <button class="nav-toggle" aria-label="Menu">MENU</button>
     <nav class="main-nav">
       <ul>
@@ -29,60 +26,17 @@
   </div>
 </header>
 
-<section class="hero">
+<section class="hero" style="padding:64px 0 40px;">
   <div class="wrap">
-    <div class="eyebrow">Konya Technical University — KAPSUL YAZGİT</div>
-    <h1>PRUVA</h1>
-    <div class="cta-row">
-      <a href="sponsors.html" class="btn btn-primary">Become a Sponsor</a>
-    </div>
+    <div class="eyebrow">Updates</div>
+    <h1>Latest project status.</h1>
+    <p class="lead">Updates from the software, electronics, and mechanics teams, in a news feed format.</p>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">About Us</div>
-      <h2>Who are we?</h2>
-    </div>
-    <div class="grid grid-3">
-      <div class="card">
-        <h3>Autonomous Navigation</h3>
-        <p>Mission planning running on ROS 2 and collision avoidance logic complying with COLREG rules.</p>
-      </div>
-      <div class="card">
-        <h3>Perception System</h3>
-        <p>Depth measurement with ZED2i stereo camera, real-time object detection on Jetson Orin NX.</p>
-      </div>
-      <div class="card">
-        <h3>Vehicle Control</h3>
-        <p>Integrated control layer with Pixhawk and MAVROS, live data streaming to the ground control station.</p>
-      </div>
-    </div>
-
-    <div class="stat-row">
-      <div class="stat"><div class="num">2</div><div class="label">Target Competitions</div></div>
-      <div class="stat"><div class="num">3</div><div class="label">Technical Departments</div></div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">Competitions</div>
-      <h2>Where do we compete?</h2>
-    </div>
-    <div class="grid grid-2">
-      <div class="card">
-        <h3>Njord Challenge 2026 — Trondheim, Norway</h3>
-        <p>One of Europe's leading university competitions in the field of autonomous marine vehicles.</p>
-      </div>
-      <div class="card">
-        <h3>TEKNOFEST — Unmanned Surface Vehicles</h3>
-        <p>A national autonomous system at Turkey's most comprehensive technology and aerospace festival.</p>
-      </div>
-    </div>
+    <div id="news-list"></div>
   </div>
 </section>
 
@@ -99,6 +53,7 @@
       <div class="footer-menu-links">
         <a href="index.html">Home</a>
         <a href="gallery.html">Gallery</a>
+        <a href="news.html">News</a>
         <a href="team.html">Team</a>
         <a href="sponsors.html">Sponsors</a>
       </div>
