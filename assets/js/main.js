@@ -1,3 +1,7 @@
+// ===========================================================
+// KAPSUL YAZGİT PRUVA — Main Script
+// ===========================================================
+
 document.addEventListener("DOMContentLoaded", () => {
   const toggle = document.querySelector(".nav-toggle");
   const nav = document.querySelector(".main-nav");
@@ -18,26 +22,39 @@ async function loadNews(container) {
   try {
     const res = await fetch("assets/data/news.json");
     const items = await res.json();
+    
     if (!items.length) {
-      container.innerHTML = `<p class="empty-state">Henüz yayınlanmış bir gelişme yok. Yakında burada olacak.</p>`;
+      // İngilizceye çevrildi
+      container.innerHTML = `<p class="empty-state">No updates published yet. Coming soon.</p>`;
       return;
     }
+    
     items
       .sort((a, b) => new Date(b.date) - new Date(a.date))
       .forEach(item => {
         const el = document.createElement("article");
         el.className = "news-item";
         el.innerHTML = `
-          <time datetime="${item.date}">${item.date}</time>
-          <div>
+          ${item.image ? `
+            <div class="news-image">
+              <img src="${item.image}" class="main-img" alt="${item.title}">
+            </div>` : ""}
+            
+          <div class="news-content">
+            ${item.image ? `<img src="${item.image}" class="row-bg-blur" aria-hidden="true">` : ""}
+            
+            <time datetime="${item.date}">${item.date}</time>
             <h3>${item.title}</h3>
             <p>${item.summary}</p>
             ${item.tag ? `<span class="badge">${item.tag}</span>` : ""}
-          </div>`;
+          </div>
+        `;
+        
         container.appendChild(el);
       });
   } catch (err) {
-    container.innerHTML = `<p class="empty-state">Gelişmeler yüklenemedi.</p>`;
+    // İngilizceye çevrildi
+    container.innerHTML = `<p class="empty-state">Failed to load updates.</p>`;
     console.error(err);
   }
 }

@@ -1,1 +1,23 @@
-[]
+[
+  {
+    "date": "2026-06-20",
+    "title": "PRUVA ASV Hits the Water for Initial Testing!",
+    "summary": "The moment we've been working towards in the workshop has finally arrived—our Autonomous Surface Vehicle (ASV) has officially touched water! We have successfully commenced our first phase of aquatic testing.<br><br>Before we fully integrate our custom PCB hardware and deploy our complex ROS 2-based autonomous navigation systems, these initial trials are crucial. We are rigorously verifying the hull's hydrodynamics, water-tightness, buoyancy, and optimal weight distribution. Seeing the physical platform performing well in the water is a massive morale boost for the entire team.<br><br>With the mechanical fundamentals validated, our software and electronics divisions are now preparing to initiate on-water sensor calibrations. Step by step, we are getting closer to the fjords of Trondheim and the shipyard of Kocaeli. Stay tuned for further technical updates as we bring our ASV to life!",
+    "tag": "Testing",
+    "image": "assets/img/news/initial_test.jpg"
+  },
+  {
+    "date": "2026-06-10",
+    "title": "All Set for Norway: PRUVA Team Visas Officially Approved!",
+    "summary": "We are thrilled to share a major logistical milestone: the visa applications for all 13 members of the PRUVA team have been officially approved! With this crucial step completed, there are no remaining obstacles ahead of our journey to the Njord Autonomous Ship Challenge.<br><br>We would like to express our deepest gratitude to the Rector of Konya Technical University, Prof. Dr. Osman Nuri Çelik, as well as the Norwegian Embassy and VFS Global for their invaluable support during this process.<br><br>Operating as a complete, unified team on the field is essential for our success. We continue to move forward shoulder-to-shoulder, finalizing the last technical details on our Autonomous Surface Vehicle (ASV). Next stop: Trondheim!",
+    "tag": "Milestone",
+    "image": "assets/img/news/visa_approval.jpeg"
+  },
+  {
+    "date": "2026-03-15",
+    "title": "PRUVA Secures Global Finalist Spot at NJORD 2026!",
+    "summary": "After months of sleepless nights, countless hours spent in the workshop, and rigorous testing, we are thrilled to announce that PRUVA is officially a finalist at the NJORD Autonomous Ship Challenge 2026!<br><br>From August 10th to 14th, we will be heading to the challenging waters of Trondheim, Norway, to compete at the pinnacle of autonomous maritime technology. This milestone is a testament to the flawless synergy of our 13-member multidisciplinary team. By pushing the boundaries of autonomous surface vehicle (ASV) technologies—from complex ROS 2 software architecture and AI integration to our custom-designed PCB hardware—we have built a system ready to perform on a global stage.<br><br>Representing Konya Technical University and bringing our local engineering strength to international waters is an incredible honor for us. We want to extend our endless thanks to everyone who has supported us on this journey.<br><br>Our course is set, and the adventure is just beginning. Stay tuned for more technical updates as we prepare for Norway!",
+    "tag": "Featured",
+    "image": "assets/img/news/njord_logo.png"
+  }
+]

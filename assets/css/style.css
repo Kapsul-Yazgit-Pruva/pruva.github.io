@@ -455,3 +455,196 @@ footer.site-footer{
   font-size: 0.85rem;
   color: #718096;
 }
+
+.featured-news {
+  margin-bottom: 60px;
+}
+
+.split-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #111827;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.split-image {
+  width: 100%;
+  height: 100%;
+}
+
+.split-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-height: 400px;
+}
+
+.split-text {
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.split-text h2 {
+  font-size: 2rem;
+  margin-bottom: 24px;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.split-text p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #a0aec0;
+  margin-bottom: 16px;
+}
+
+.split-text p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .split-layout {
+    grid-template-columns: 1fr;
+  }
+  
+  .split-image img {
+    min-height: 300px;
+  }
+  
+  .split-text {
+    padding: 32px;
+  }
+}
+
+/* =========================================================
+   HABER ÖĞESİ DÜZENİ (GÖRSEL ADADAN AYRILDI - MODERN ASİMETRİK)
+========================================================= */
+
+.news-item {
+  display: flex;
+  gap: 40px; 
+  margin-bottom: 50px; /* Haberler arası boşluk ferahlatıldı */
+  align-items: center; 
+  background: transparent; /* Ana satırın kutusu ve arka planı tamamen silindi */
+  border: none;
+  padding: 0;
+}
+
+/* ---- 1. BÖLÜM: ADADAN BAĞIMSIZ GÖRSEL ---- */
+.news-image {
+  flex: 0 0 320px; /* Sabit upscale boyutu */
+  width: 320px; 
+  aspect-ratio: 1 / 1; 
+  position: relative;
+  z-index: 1;
+}
+
+.news-image .main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  border-radius: 16px; /* Görsele ait bağımsız yumuşak köşeler */
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+  filter: drop-shadow(0 20px 35px rgba(0, 0, 0, 0.6)); /* Sayfadan bağımsız süzülme gölgesi */
+}
+
+/* Hover durumunda görsel adadan bağımsız olarak havaya kalkar */
+.news-item:hover .news-image .main-img {
+  transform: scale(1.05) translateY(-8px); 
+}
+
+/* ---- 2. BÖLÜM: YAZI ADASI (KUTU SADECE BURASI) ---- */
+.news-content {
+  flex-grow: 1; 
+  display: flex;
+  flex-direction: column;
+  background-color: #0b0f19; /* Ada görünümü sadece metin alanına verildi */
+  padding: 40px; 
+  border-radius: 20px; 
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+  overflow: hidden; /* Blur efektinin adadan taşmasını engeller */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Sadece yazı adasının içine hapsedilmiş arka plan blur */
+.news-content .row-bg-blur {
+  position: absolute;
+  top: -20%;
+  left: -20%;
+  width: 140%;
+  height: 140%;
+  object-fit: cover;
+  filter: blur(50px) opacity(0.14); 
+  z-index: 0; 
+  pointer-events: none; 
+}
+
+/* Yazıların blur katmanının üzerinde net kalması için */
+.news-content time,
+.news-content h3,
+.news-content p,
+.news-content .badge {
+  position: relative;
+  z-index: 1;
+}
+
+.news-content time {
+  display: block;
+  font-size: 0.95rem;
+  color: #3b82f6; 
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.news-content h3 {
+  font-size: 1.7rem;
+  margin-bottom: 14px;
+  color: #fff;
+  line-height: 1.3;
+}
+
+.news-content p {
+  color: #a0aec0;
+  line-height: 1.7;
+  margin-bottom: 24px;
+  font-size: 1.05rem;
+}
+
+.news-content .badge {
+  align-self: flex-start;
+  background: rgba(59, 130, 246, 0.15);
+  color: #3b82f6;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* Tablet ve Telefonlar (Mobil Düzen koruması) */
+@media (max-width: 900px) {
+  .news-item {
+    flex-direction: column; 
+    gap: 32px;
+  }
+  .news-image {
+    width: 100%; 
+    max-width: 260px; 
+    margin: 0 auto; 
+  }
+  .news-content {
+    padding: 32px 24px;
+    align-items: center; 
+    text-align: center;
+    width: 100%;
+  }
+  .news-content .badge {
+    align-self: center; 
+  }
+}
